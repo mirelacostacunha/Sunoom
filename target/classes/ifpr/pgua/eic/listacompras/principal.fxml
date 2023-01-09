@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      prefHeight="600" prefWidth="800"
+      fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaPrincipal"
+      >
+   <left>
+      <VBox spacing="10">
+         <padding>
+             <Insets topRightBottomLeft="10"/>
+         </padding>
+         <Button text="Produtos" prefWidth="100" onAction="#mostrarTelaProdutos"/>
+         <Button text="Listas" prefWidth="100" onAction="#mostrarTelaListas"/>
+         <Button text="Nova Lista" prefWidth="100" onAction="#mostrarTelaNovaLista"/>
+      </VBox>
+   </left>
+   <center>
+
+   </center>
+</BorderPane>

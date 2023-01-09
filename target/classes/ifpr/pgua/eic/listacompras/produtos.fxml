@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<VBox xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      prefHeight="600" prefWidth="800"
+      fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaProdutos"
+      spacing="10"
+      alignment="CENTER"
+      >
+
+    <padding>
+        <Insets topRightBottomLeft="10"/>
+    </padding>
+
+    <Label text="Produtos"/>
+    <GridPane>
+        <Label text="Nome" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="tfNome" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Label text="Descrição" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="tfDescricao" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button text="Salvar" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#salvar"/>
+    </GridPane>
+    <TableView fx:id="tbProdutos">
+        <columns>
+            <TableColumn fx:id="tbcId" text="Id"/>
+            <TableColumn fx:id="tbcNome" text="Nome"/>
+            <TableColumn fx:id="tbcDescricao" text="Descrição"/>
+        </columns>
+    </TableView>
+
+</VBox>
