@@ -6,42 +6,43 @@ import ifpr.pgua.eic.listacompras.controllers.TelaPrincipal;
 import ifpr.pgua.eic.listacompras.utils.BaseAppNavigator;
 
 import ifpr.pgua.eic.listacompras.utils.ScreenRegistryFXML;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.util.Callback;
 
 /**
  * JavaFX App
  */
-public class App extends BaseAppNavigator {
+public class App extends Application {
 
     @Override
-    public void init() throws Exception {
-        super.init();
+    public void start(Stage stage) throws Exception {
+        Scene scene = new Scene(loadTela("fxml/login.fxml",o-> new TelaLogin()));
+        stage.setScene(scene);
+        stage.show();
     }
 
-    @Override
-    public void stop() throws Exception {
-        super.stop();
-}
-
-
-
-    @Override
-    public String getHome() {
-        return "LOGIN";
-    }
-
-    @Override
-    public String getAppTitle() {
-        return "Lista de Compras";
-    }
-
-    @Override
-    public void registrarTelas() {
-        registraTela("PRINCIPAL", new ScreenRegistryFXML(App.class,"principal.fxml",o->new TelaPrincipal()));
-        registraTela("LOGIN",new ScreenRegistryFXML(App.class, "login.fxml",o->new TelaLogin()));
-        registraTela("CADASTRO", new ScreenRegistryFXML(App.class, "cadastro.fxml",o-> new TelaCadastro())) ;
+    public static Parent loadTela(String fxml, Callback conttroller){
+        Parent root = null;
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getResource(fxml));
+            loader.setControllerFactory(conttroller);
+            root = loader.load();
             
-        
+        } catch (Exception e) {
+            System.out.println("Problema ao carregar o FXML!!");
+            e.printStackTrace();
+            System.exit(0);
+        }
+
+        return root;
     }
 
-
+    public static void main(String[] args) {
+        launch();
+    }
 }
