@@ -1,1 +1,2 @@
-09/01/2023- 
+09/01/2023- Foi criado o projeto Lista Compras dos videos do professor Hugo Perlin implententando uma tela de login e cadastro.
+No dia 09/01 foi criada as telas de Login, Cadastro e a tela Principal. -Funcionando!
