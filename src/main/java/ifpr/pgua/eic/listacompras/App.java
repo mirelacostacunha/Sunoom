@@ -17,12 +17,47 @@ import javafx.util.Callback;
  * JavaFX App
  */
 public class App extends Application {
+    
+    private static Stage stage;
+
+    private static Scene login;
+    private static Scene cadastro;
+    private static Scene principal;
+
 
     @Override
-    public void start(Stage stage) throws Exception {
-        Scene scene = new Scene(loadTela("fxml/login.fxml",o-> new TelaLogin()));
-        stage.setScene(scene);
-        stage.show();
+    public void start(Stage primaryStage) throws Exception {
+        stage = primaryStage;
+
+        Parent fxmlLogin = FXMLLoader.load(getClass().getResource("login.fxml"));
+        login = new Scene(fxmlLogin, 640, 420);
+
+        Parent fxmlCadastro = FXMLLoader.load(getClass().getResource("cadastro.fxml"));
+        cadastro = new Scene(fxmlCadastro, 640, 420);
+
+        Parent fxmlPrincipal = FXMLLoader.load(getClass().getResource("principal.fxml"));
+        principal = new Scene(fxmlPrincipal, 640, 420);
+        
+        
+        primaryStage.setScene(login);
+        primaryStage.show();
+    }
+
+    public static void mudarTela(String scr){
+        switch(scr){
+            
+            case "login":
+                stage.setScene(login);
+            break;
+
+            case "cadastro":
+                stage.setScene(cadastro);
+            break;
+
+            case "principal":
+                stage.setScene(principal);
+            break;
+        }
     }
 
     public static Parent loadTela(String fxml, Callback conttroller){

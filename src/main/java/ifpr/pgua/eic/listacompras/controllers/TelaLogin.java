@@ -1,16 +1,22 @@
 package ifpr.pgua.eic.listacompras.controllers;
 
+import java.io.IOException;
+
 import ifpr.pgua.eic.listacompras.App;
 import ifpr.pgua.eic.listacompras.utils.BorderPaneRegion;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 
 public class TelaLogin {
 
     
-    
+    @FXML
+    private AnchorPane root;
    
     @FXML
     private Button btCadastrar;
@@ -24,14 +30,14 @@ public class TelaLogin {
     @FXML
     private TextField btUsuario;
 
-    @FXML
-    void cadastrar(ActionEvent event) {
 
-    
+    @FXML
+    private void cadastrar(){
+       App.mudarTela("cadastro");
     }
 
     @FXML
     void entrar(ActionEvent event) {
-
+        App.mudarTela("principal");
     } 
 }
