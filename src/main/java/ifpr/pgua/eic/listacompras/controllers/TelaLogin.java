@@ -27,7 +27,7 @@ public class TelaLogin {
     @FXML
     void cadastrar(ActionEvent event) {
 
-    App.changeScreenRegion("CADASTRO", BorderPaneRegion.CENTER) ;
+    
     }
 
     @FXML
