@@ -7,6 +7,7 @@ import ifpr.pgua.eic.listacompras.results.Result;
 import ifpr.pgua.eic.listacompras.utils.BorderPaneRegion;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
