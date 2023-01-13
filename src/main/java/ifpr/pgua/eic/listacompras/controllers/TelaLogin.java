@@ -33,11 +33,11 @@ public class TelaLogin {
 
     @FXML
     private void cadastrar(){
-       App.mudarTela("cadastro");
+        App.changeScreenRegion("Cadastro", BorderPaneRegion.CENTER);
     }
 
     @FXML
     void entrar(ActionEvent event) {
-        App.mudarTela("principal");
+        
     } 
 }

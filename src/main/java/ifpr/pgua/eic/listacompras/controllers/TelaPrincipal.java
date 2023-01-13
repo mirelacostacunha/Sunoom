@@ -23,6 +23,7 @@ public class TelaPrincipal {
 
     @FXML
     void sair(ActionEvent event) {
-        App.mudarTela("login");
+        
     }
+    
 }

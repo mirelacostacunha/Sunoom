@@ -22,3 +22,10 @@ CREATE TABLE itenslista_tca(
     CONSTRAINT itens_FK_listas FOREING KEY (idLista) REFERENCES listas(listas_tca,)
     CONSTRAINT itens_FK_produtos FOREING KEY (idProduto) REFERENCES produtos(produtos_tca)
 );
+
+CREATE TABLE cadastro_tca(
+    id INTEGER AUTO_INCREMENT,
+    usuario varchar (35) NOT NULL,
+    senha varchar (55) NOT NULL,
+    PRIMARY KEY (id)
+);
