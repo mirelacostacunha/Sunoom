@@ -7,6 +7,7 @@ public class Result {
         this.msg = msg;
     }
 
+    
     public static Result sucess(String msg){
         return new Sucess(msg);
     }
