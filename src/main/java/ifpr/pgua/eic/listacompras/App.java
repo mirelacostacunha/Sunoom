@@ -40,7 +40,7 @@ public class App extends BaseAppNavigator {
 
     @Override
     public String getAppTitle() {
-        return "Sunoom's Boutique";
+        return "Sunoom's Boutiques";
     }
 
     @Override
