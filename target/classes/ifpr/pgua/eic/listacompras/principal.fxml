@@ -34,6 +34,7 @@
                         <Font name="Bell MT" size="13.0" />
                      </font>
                   </Label>
+                  <Button fx:id="btCarrinho" layoutX="607.0" layoutY="19.0" mnemonicParsing="false" onAction="#carrinho" text="Carrinho de compras" />
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" />

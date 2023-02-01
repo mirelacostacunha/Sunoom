@@ -65,7 +65,8 @@ public class TelaCadastro {
         msg = "concluido";
         } else {
             result = repository.cadastrar(nome, senha);
-            msg = "problemas";
+
+            msg = result.getMsg();
         }
 
        

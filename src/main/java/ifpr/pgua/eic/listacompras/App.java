@@ -1,11 +1,14 @@
 package ifpr.pgua.eic.listacompras;
 
+import ifpr.pgua.eic.listacompras.Dao.JDBCUsuarioDAO;
+import ifpr.pgua.eic.listacompras.Dao.interfaces.UsuarioDao;
 import ifpr.pgua.eic.listacompras.controllers.TelaAcessorio;
 import ifpr.pgua.eic.listacompras.controllers.TelaCadastro;
 import ifpr.pgua.eic.listacompras.controllers.TelaLogin;
 import ifpr.pgua.eic.listacompras.controllers.TelaPrincipal;
 import ifpr.pgua.eic.listacompras.controllers.TelaVestido;
 import ifpr.pgua.eic.listacompras.repository.LoginRepository;
+import ifpr.pgua.eic.listacompras.results.FabricaConexao;
 import ifpr.pgua.eic.listacompras.utils.BaseAppNavigator;
 import ifpr.pgua.eic.listacompras.utils.ScreenRegistry;
 import ifpr.pgua.eic.listacompras.utils.ScreenRegistryFXML;
@@ -19,12 +22,17 @@ import javafx.util.Callback;
 
 public class App extends BaseAppNavigator {
     
+    FabricaConexao fabricaConexao;
+    UsuarioDao usuarioDao;
     LoginRepository loginRepository;
 
 
     @Override
     public void init() throws Exception {
         super.init();
+        fabricaConexao = FabricaConexao.getInstance();
+        usuarioDao = new JDBCUsuarioDAO(fabricaConexao);
+        loginRepository = new LoginRepository(usuarioDao);
 
     }
 

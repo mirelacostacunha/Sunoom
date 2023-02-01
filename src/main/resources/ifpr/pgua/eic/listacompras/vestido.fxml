@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -45,7 +46,7 @@
             <Button layoutX="486.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color: transpart; -fx-border-radius: 15; -fx-border-color: pink;" text="Voltar" />
             <AnchorPane layoutY="502.0" prefHeight="704.0" prefWidth="600.0" style="-fx-background-color: white;">
                <children>
-                  <ImageView fitHeight="261.0" fitWidth="228.0" layoutX="23.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="261.0" fitWidth="228.0" layoutX="24.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@2481089b115ebffe232f11038d869c1b.jpg" />
                      </image>
@@ -78,6 +79,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
+                  <ScrollBar layoutX="593.0" layoutY="-503.0" orientation="VERTICAL" prefHeight="1325.0" prefWidth="14.0" style="-fx-background-color: transparent;" />
                </children>
             </AnchorPane>
             <Label layoutX="200.0" layoutY="355.0" text="Rose Sun" textFill="#b43398">

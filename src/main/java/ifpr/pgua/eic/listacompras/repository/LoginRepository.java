@@ -16,7 +16,8 @@ public class LoginRepository {
     public Result cadastrar(String nome, String senha ){
 
         Usuario usuario = new Usuario(nome, senha);
-        return null;
+        return dao.criar(usuario);
+        
 
         
     }

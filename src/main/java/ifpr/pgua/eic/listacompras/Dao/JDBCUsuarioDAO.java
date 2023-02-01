@@ -26,7 +26,7 @@ public class JDBCUsuarioDAO implements UsuarioDao{
             
             Connection con = fabricaConexao.getConnection();
 
-            String sql = "INSERT INTO usuario_tca(usuario,senha) VALUES (?,?)";
+            String sql = "INSERT INTO cadastro_tca(usuario,senha) VALUES (?,?)";
         
         PreparedStatement pstm = con.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
 
