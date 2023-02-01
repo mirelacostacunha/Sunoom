@@ -5,23 +5,29 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaCadastro">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaCadastro">
    <left>
       <Label BorderPane.alignment="CENTER" />
    </left>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: White;" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="tfUsuario" layoutX="210.0" layoutY="119.0" />
-            <TextField fx:id="tfSenha" layoutX="212.0" layoutY="163.0" />
-            <TextField fx:id="tfSenha2" layoutX="212.0" layoutY="209.0" />
-            <Label layoutX="211.0" layoutY="101.0" text="Usuario" />
-            <Label layoutX="211.0" layoutY="145.0" text="Senha" />
-            <Label layoutX="211.0" layoutY="191.0" text="Confirme sua senha" />
-            <Button fx:id="btCadastrar" onAction="#cadastrar" layoutX="252.0" layoutY="250.0" mnemonicParsing="false" text="Cadastrar" />
-            <Label layoutX="198.0" layoutY="304.0" text="ja possui um cadastro!" />
-            <Button fx:id="brEntar" layoutX="316.0" layoutY="300.0" mnemonicParsing="false" onAction="#sair" text="Entre" />
+            <TextField fx:id="tfUsuario" layoutX="210.0" layoutY="126.0" style="-fx-background-color: transparent; -fx-border-color: pink; -fx-border-radius: 15;" />
+            <TextField fx:id="tfSenha" layoutX="210.0" layoutY="172.0" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: pink;" />
+            <TextField fx:id="tfSenha2" layoutX="212.0" layoutY="221.0" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: pink;" />
+            <Label layoutX="211.0" layoutY="108.0" text="Usuario" textFill="#943d85" />
+            <Label layoutX="215.0" layoutY="154.0" text="Senha" textFill="#9c2394" />
+            <Label layoutX="210.0" layoutY="200.0" text="Confirme sua senha" textFill="#942d86" />
+            <Button fx:id="btCadastrar" layoutX="252.0" layoutY="256.0" mnemonicParsing="false" onAction="#cadastrar" style="-fx-background-color: transparent; -fx-border-color: pink; -fx-border-radius: 15;" text="Cadastrar" />
+            <Label layoutX="203.0" layoutY="304.0" text="ja possui um cadastro!" textFill="#a12f92" />
+            <Button fx:id="btEntar" layoutX="320.0" layoutY="300.0" mnemonicParsing="false" onAction="#sair" style="-fx-background-color: transparent; -fx-text-fill: purple;" text="Entre" />
+            <Label layoutX="192.0" layoutY="43.0" text="Sunoom' s Boutique" textFill="#e162b3">
+               <font>
+                  <Font name="Bodoni MT Poster Compressed" size="41.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </center>

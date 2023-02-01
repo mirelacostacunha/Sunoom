@@ -16,7 +16,7 @@ import javafx.scene.control.Alert.AlertType;
 public class TelaCadastro {
     
     @FXML
-    private Button brEntar;
+    private Button btEntar;
 
     @FXML
     private Button btCadastrar;
@@ -50,13 +50,15 @@ public class TelaCadastro {
     }
 
     @FXML
-    void cadastrar(ActionEvent event) {
+    private void cadastrar(ActionEvent eve) {
         
         String msg = null;
         String nome = tfUsuario.getText();
         String senha = tfSenha.getText();
 
         Result result = null;
+
+
 
         if (atualizar) {
             result = repository.atualizar(selecionado.getId(), nome, senha);
@@ -65,6 +67,8 @@ public class TelaCadastro {
             result = repository.cadastrar(nome, senha);
             msg = "problemas";
         }
+
+       
 
 
         Alert alert = new Alert(AlertType.INFORMATION, msg);

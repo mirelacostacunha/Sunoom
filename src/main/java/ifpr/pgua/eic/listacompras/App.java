@@ -1,8 +1,10 @@
 package ifpr.pgua.eic.listacompras;
 
+import ifpr.pgua.eic.listacompras.controllers.TelaAcessorio;
 import ifpr.pgua.eic.listacompras.controllers.TelaCadastro;
 import ifpr.pgua.eic.listacompras.controllers.TelaLogin;
 import ifpr.pgua.eic.listacompras.controllers.TelaPrincipal;
+import ifpr.pgua.eic.listacompras.controllers.TelaVestido;
 import ifpr.pgua.eic.listacompras.repository.LoginRepository;
 import ifpr.pgua.eic.listacompras.utils.BaseAppNavigator;
 import ifpr.pgua.eic.listacompras.utils.ScreenRegistry;
@@ -45,8 +47,11 @@ public class App extends BaseAppNavigator {
 
     @Override
     public void registrarTelas() {
+       registraTela("Principal", new ScreenRegistryFXML(getClass(), "principal.fxml", (o)-> new TelaPrincipal()));
        registraTela("Login", new ScreenRegistryFXML(getClass(), "login.fxml", (o)-> new TelaLogin()));
        registraTela("Cadastro", new ScreenRegistryFXML(getClass(), "cadastro.fxml", (o)-> new TelaCadastro(loginRepository)));
+       registraTela("Vestido", new ScreenRegistryFXML(getClass(), "vestido.fxml", (o)-> new TelaVestido()));
+       registraTela("Acessorio", new ScreenRegistryFXML(getClass(), "acessorio.fxml", (o)-> new TelaAcessorio()));
     }
 
 }

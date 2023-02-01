@@ -37,7 +37,7 @@ public class TelaLogin {
     }
 
     @FXML
-    void entrar(ActionEvent event) {
-        
+    private void entrar() {
+        App.changeScreenRegion("Principal", BorderPaneRegion.CENTER);
     } 
 }

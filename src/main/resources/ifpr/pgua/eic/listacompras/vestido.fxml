@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <AnchorPane prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="563.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="200.0" layoutY="28.0" prefHeight="54.0" prefWidth="169.0" text="Vestidos Sunoom" textFill="#fa23bd">
+               <font>
+                  <Font name="Bodoni MT Poster Compressed" size="41.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="24.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="200.0" fitWidth="154.0" layoutX="33.0" layoutY="109.0">
+               <image>
+                  <Image url="@1504086626-rX03blkZ.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="200.0" layoutY="109.0" text="Black Star" textFill="#b43398">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="200.0" layoutY="155.0" text="Vestido molamanca, possui fenda, feito em cristais importados" textFill="#ac3e98" />
+            <Label layoutX="200.0" layoutY="175.0" text="Saia em tecido de seda 700 fios e tule all black" textFill="#a64a99" />
+            <Label layoutX="260.0" layoutY="250.0" text="Á vista       Boleto       Cartão" textFill="#186c81" />
+            <Label layoutX="463.0" layoutY="216.0" prefHeight="23.0" prefWidth="98.0" text="\$19.000,00" textFill="#337624">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="436.0" layoutY="276.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: green;" text="Adicionar ao carrinho" />
+            <Button layoutX="418.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: pink; -fx-border-radius: 15;" text="Sair" />
+            <Button layoutX="486.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color: transpart; -fx-border-radius: 15; -fx-border-color: pink;" text="Voltar" />
+            <AnchorPane layoutY="502.0" prefHeight="704.0" prefWidth="600.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="261.0" fitWidth="228.0" layoutX="23.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@2481089b115ebffe232f11038d869c1b.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="217.0" layoutY="152.0" text="Sea in world" textFill="#b43398">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="220.0" layoutY="211.0" text="Vestido molamanca, possui fenda, feito em cristais importados" textFill="#ac3e98" />
+                  <Label layoutX="220.0" layoutY="229.0" text="Saia em tecido de seda 700 fios e tule all black" textFill="#a64a99" />
+                  <Label layoutX="220.0" layoutY="275.0" text="Formas de pagamento" textFill="#5b913e" />
+                  <Label layoutX="236.0" layoutY="338.0" text="Á vista       Boleto       Cartão" textFill="#186c81" />
+                  <Button layoutX="434.0" layoutY="369.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: green;" text="Adicionar ao carrinho" />
+                  <Label layoutX="466.0" layoutY="284.0" prefHeight="23.0" prefWidth="98.0" text="\$19.000,00" textFill="#337624">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="206.0" layoutY="-9.0" text="Formas de pagamento" textFill="#5b913e" />
+                  <ImageView fitHeight="223.0" fitWidth="177.0" layoutX="23.0" layoutY="-141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@OIP%20(1).jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="250.0" layoutY="29.0" text="Á vista       Boleto       Cartão" textFill="#186c81" />
+                  <Button layoutX="434.0" layoutY="82.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: green;" text="Adicionar ao carrinho" />
+                  <Label layoutX="450.0" layoutY="2.0" prefHeight="23.0" prefWidth="98.0" text="\$19.000,00" textFill="#337624">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="200.0" layoutY="355.0" text="Rose Sun" textFill="#b43398">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="200.0" layoutY="417.0" text="Vestido molamanca, possui fenda, feito em cristais importados" textFill="#ac3e98" />
+            <Label layoutX="200.0" layoutY="443.0" text="Saia em tecido de seda 700 fios e tule all black" textFill="#a64a99" />
+            <Label layoutX="200.0" layoutY="219.0" text="Formas de pagamento" textFill="#5b913e" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
