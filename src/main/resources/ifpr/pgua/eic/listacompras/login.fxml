@@ -9,30 +9,31 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="600.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaLogin">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaLogin">
    <AnchorPane />
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="1080.0" prefWidth="1870.0" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane layoutX="37.0" layoutY="-42.0" prefHeight="354.0" prefWidth="652.0">
+            <AnchorPane layoutY="6.0" prefHeight="1080.0" prefWidth="1920.0">
                <children>
-                  <ImageView fitHeight="443.0" fitWidth="376.0" layoutX="377.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="443.0" fitWidth="376.0" layoutX="189.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@logo_robe-705x705.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="239.0" layoutY="72.0" text="Sunoom' s  Boutique" textFill="#e162b3">
+                  <Label layoutX="626.0" layoutY="549.0" text="Sunoom' s  Boutique" textFill="#e162b3">
                      <font>
                         <Font name="Bodoni MT Poster Compressed" size="41.0" />
                      </font>
                   </Label>
-                  <Label layoutX="262.0" layoutY="145.0" text="Usuario" textFill="#96267e" />
-                  <Label layoutX="266.0" layoutY="190.0" text="Senha" textFill="#913982" />
-                  <Label layoutX="245.0" layoutY="302.0" text="Não possui uma conta?" textFill="#ff19ba" />
-                  <TextField fx:id="btUsuario" layoutX="262.0" layoutY="163.0" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: pink;" />
-                  <TextField fx:id="btsenha" layoutX="262.0" layoutY="213.0" style="-fx-background-color: transparent; -fx-border-color: pink; -fx-border-radius: 15;" />
-                  <Button fx:id="btCadastrar" layoutX="377.0" layoutY="298.0" mnemonicParsing="false" onAction="#cadastrar" style="-fx-background-color: transparent; -fx-text-fill: purple;" text="Cadastre se!" />
-                  <Button fx:id="btEntrar" layoutX="324.0" layoutY="260.0" mnemonicParsing="false" onAction="#entrar" style="-fx-background-color: transparent; -fx-border-color: pink; -fx-border-radius: 15;" text="Entrar" />
+                  <Label layoutX="561.0" layoutY="597.0" text="Usuario" textFill="#96267e" />
+                  <Label layoutX="565.0" layoutY="652.0" text="Senha" textFill="#913982" />
+                  <Label layoutX="177.0" layoutY="375.0" text="Não possui uma conta?" textFill="#ff19ba" />
+                  <TextField fx:id="tfUsuario" layoutX="565.0" layoutY="615.0" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: pink;" />
+                  <TextField fx:id="tfSenha" layoutX="565.0" layoutY="677.0" style="-fx-background-color: transparent; -fx-border-color: pink; -fx-border-radius: 15;" />
+                  <Button fx:id="btCadastrar" layoutX="337.0" layoutY="412.0" mnemonicParsing="false" onAction="#cadastrar" style="-fx-background-color: transparent; -fx-text-fill: purple;" text="Cadastre se!" />
+                  <Button fx:id="btEntrar" layoutX="515.0" layoutY="438.0" mnemonicParsing="false" onAction="#entrar" style="-fx-background-color: transparent; -fx-border-color: pink; -fx-border-radius: 15;" text="Entrar" />
+                  <AnchorPane layoutX="-2.0" layoutY="-29.0" prefHeight="211.0" prefWidth="1932.0" style="-fx-background-color: #f26b8a;" />
                </children>
             </AnchorPane>
          </children>

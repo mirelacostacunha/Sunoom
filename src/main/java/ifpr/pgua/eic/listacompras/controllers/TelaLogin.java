@@ -30,10 +30,10 @@ public class TelaLogin {
     private Button btEntrar;
 
     @FXML
-    private TextField btSenha;
+    private TextField tfSenha;
 
     @FXML
-    private TextField btUsuario;
+    private TextField tfUsuario;
 
 
     @FXML
@@ -41,24 +41,10 @@ public class TelaLogin {
         App.changeScreenRegion("Cadastro", BorderPaneRegion.CENTER);
     }
 
-    String msg;
     
+
     @FXML
     private void entrar() {
-       String senha = btSenha.getText();
-       String nome = btUsuario.getText();
-
-       
-       Result result = null;
-
-       if(login.entrar(nome, senha) == true){
-
         App.changeScreenRegion("Principal", BorderPaneRegion.CENTER);
-       }else{
-            msg = "Senha ou usuario invalido!!";
-       }
-
-       Alert alert = new Alert(Alert.AlertType.INFORMATION,msg);
-       alert.showAndWait();
     } 
 }

@@ -58,16 +58,14 @@ public class JDBCUsuarioDAO implements UsuarioDao{
             ResultSet rs = pstm.executeQuery();
 
             while(rs.next()){
-    
-               
                 String senha = rs.getString("senha");
-
-                 usuario = new Usuario( nome, senha);
+                usuario = new Usuario( nome, senha);
             }
 
             rs.close();
             pstm.close();
             con.close();
+
         } catch (Exception e) {
 
             System.out.println(e.getMessage());

@@ -31,15 +31,10 @@ public class LoginRepository {
 
         Usuario val = dao.buscarPorUsuario(nome);
 
-        if(val.getUsuario() == nome && val.getSenha() == senha ){
-            return true;
-       
-
-        }else{
-
-            System.out.println("SENHA INCORRETA");
-            
- 
+        if(val.getUsuario() == nome && val.getSenha() == senha){
+            System.out.println("deu certo");
+        }  else {
+            System.out.println("deu errado");
         }
 
         return false;

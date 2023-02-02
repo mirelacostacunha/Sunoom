@@ -19,6 +19,15 @@ public class TelaPrincipal {
     @FXML
     private Button btSair;
     
+    @FXML
+    private Button btCarrinhoCompra;
+
+
+    @FXML
+    private void carrinho() {
+        App.changeScreenRegion("ListaCompra", BorderPaneRegion.CENTER);
+
+    } 
 
     @FXML
     private void vestidos() {

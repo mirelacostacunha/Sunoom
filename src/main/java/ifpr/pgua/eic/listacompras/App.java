@@ -4,6 +4,7 @@ import ifpr.pgua.eic.listacompras.Dao.JDBCUsuarioDAO;
 import ifpr.pgua.eic.listacompras.Dao.interfaces.UsuarioDao;
 import ifpr.pgua.eic.listacompras.controllers.TelaAcessorio;
 import ifpr.pgua.eic.listacompras.controllers.TelaCadastro;
+import ifpr.pgua.eic.listacompras.controllers.TelaListaCompra;
 import ifpr.pgua.eic.listacompras.controllers.TelaLogin;
 import ifpr.pgua.eic.listacompras.controllers.TelaPrincipal;
 import ifpr.pgua.eic.listacompras.controllers.TelaVestido;
@@ -60,6 +61,7 @@ public class App extends BaseAppNavigator {
        registraTela("Cadastro", new ScreenRegistryFXML(getClass(), "cadastro.fxml", (o)-> new TelaCadastro(loginRepository)));
        registraTela("Vestido", new ScreenRegistryFXML(getClass(), "vestido.fxml", (o)-> new TelaVestido()));
        registraTela("Acessorio", new ScreenRegistryFXML(getClass(), "acessorio.fxml", (o)-> new TelaAcessorio()));
+       registraTela("ListaCompra", new ScreenRegistryFXML(getClass(), "listaCompra.fxml", (o)-> new TelaListaCompra()));
     }
 
 }

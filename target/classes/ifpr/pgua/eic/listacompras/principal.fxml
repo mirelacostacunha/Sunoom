@@ -12,34 +12,42 @@
    <center>
       
    </center>
-   <center>
-      <VBox prefHeight="400.0" prefWidth="600.0" spacing="10" BorderPane.alignment="CENTER">
+   <bottom>
+      <VBox prefHeight="606.0" prefWidth="953.0" spacing="10" BorderPane.alignment="CENTER">
          <padding>
             <Insets topRightBottomLeft="10" />
          </padding>
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" />
-            <AnchorPane prefHeight="364.0" prefWidth="653.0" style="-fx-background-color: white;">
+            <AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;">
                <children>
-                  <Button fx:id="btAcessorios" layoutX="296.0" layoutY="114.0" onAction="#acessorios" prefWidth="100" style="-fx-background-color: transpart; -fx-border-color: pink; -fx-border-radius: 15;" text="Acessorios " />
-                  <Button fx:id="btVestido" layoutX="296.0" layoutY="158.0" mnemonicParsing="false" onAction="#vestidos" prefWidth="100" style="-fx-background-color: transpart; -fx-border-radius: 15; -fx-border-color: pink;" text="Vestidos" /> 
-                  <Button fx:id="btSair" layoutX="296.0" layoutY="201.0" onAction="#sair" prefWidth="100" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: purple;" text="Sair" />
-                  <Label layoutX="247.0" layoutY="7.0" text="Sunoom' s  Boutique" textFill="#e162b3">
-                     <font>
-                        <Font name="Bodoni MT Poster Compressed" size="41.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="60.0" layoutY="284.0" prefHeight="26.0" prefWidth="658.0" text="Uma charmosa boutique de vestidos de gala exclusivos feitos a mão pela renomada estilista Mirela da Costa Cunha." textFill="#95389c">
+                  <Button fx:id="btAcessorios" layoutX="366.0" layoutY="120.0" onAction="#acessorios" prefWidth="100" style="-fx-background-color: transpart; -fx-border-color: pink; -fx-border-radius: 15;" text="Acessorios " />
+                  <Button fx:id="btVestido" layoutX="366.0" layoutY="166.0" mnemonicParsing="false" onAction="#vestidos" prefWidth="100" style="-fx-background-color: transpart; -fx-border-radius: 15; -fx-border-color: pink;" text="Vestidos" /> 
+                  <Button fx:id="btSair" layoutX="366.0" layoutY="202.0" onAction="#sair" prefWidth="100" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: purple;" text="Sair" />
+                  <Label layoutX="273.0" layoutY="242.0" prefHeight="26.0" prefWidth="658.0" text="Uma charmosa boutique de vestidos de gala exclusivos" textFill="#95389c">
                      <font>
                         <Font name="Bell MT" size="13.0" />
                      </font>
                   </Label>
-                  <Button fx:id="btCarrinho" layoutX="607.0" layoutY="19.0" mnemonicParsing="false" onAction="#carrinho" text="Carrinho de compras" />
+                  <Label layoutX="270.0" layoutY="255.0" prefHeight="25.0" prefWidth="337.0" text=" feitos a mão pela renomada estilista Mirela da Costa Cunha." textFill="#7b1778">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="-11.0" layoutY="-10.0" prefHeight="108.0" prefWidth="1920.0" style="-fx-background-color: #f26b8a;">
+                     <children>
+                        <Label layoutX="347.0" layoutY="31.0" text="Sunoom' s  Boutique" textFill="WHITE">
+                           <font>
+                              <Font name="Bodoni MT Poster Compressed" size="41.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btCarrinhoCompra" layoutX="553.0" layoutY="75.0" mnemonicParsing="false" onAction="#carrinho" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 15; -fx-text-fill: white;" text="Carrinho de compras" />
+                     </children>
+                  </AnchorPane>
+                  
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" />
          </children>
       </VBox>
-   </center>
+   </bottom>
 
 </BorderPane>
