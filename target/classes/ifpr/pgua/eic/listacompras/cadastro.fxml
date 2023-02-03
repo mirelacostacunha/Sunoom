@@ -3,32 +3,66 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaCadastro">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="1543.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaCadastro">
    <left>
       <Label BorderPane.alignment="CENTER" />
    </left>
-   <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: White;" BorderPane.alignment="CENTER">
+   <top>
+      <AnchorPane focusTraversable="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: White;" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="tfUsuario" layoutX="210.0" layoutY="126.0" style="-fx-background-color: transparent; -fx-border-color: pink; -fx-border-radius: 15;" />
-            <TextField fx:id="tfSenha" layoutX="210.0" layoutY="172.0" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: pink;" />
-            <TextField fx:id="tfSenha2" layoutX="212.0" layoutY="221.0" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: pink;" />
-            <Label layoutX="211.0" layoutY="108.0" text="Usuario" textFill="#943d85" />
-            <Label layoutX="215.0" layoutY="154.0" text="Senha" textFill="#9c2394" />
-            <Label layoutX="210.0" layoutY="200.0" text="Confirme sua senha" textFill="#942d86" />
-            <Button fx:id="btCadastrar" layoutX="252.0" layoutY="256.0" mnemonicParsing="false" onAction="#cadastrar" style="-fx-background-color: transparent; -fx-border-color: pink; -fx-border-radius: 15;" text="Cadastrar" />
-            <Label layoutX="203.0" layoutY="304.0" text="ja possui um cadastro!" textFill="#a12f92" />
-            <Button fx:id="btEntar" layoutX="320.0" layoutY="300.0" mnemonicParsing="false" onAction="#sair" style="-fx-background-color: transparent; -fx-text-fill: purple;" text="Entre" />
-            <Label layoutX="192.0" layoutY="43.0" text="Sunoom' s Boutique" textFill="#e162b3">
-               <font>
-                  <Font name="Bodoni MT Poster Compressed" size="41.0" />
-               </font>
-            </Label>
+            <ImageView fitHeight="1069.0" fitWidth="1741.0" layoutX="158.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@53ce64e7-2c85-4329-9a13-6d1d36923052.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="392.0" layoutY="334.0" prefHeight="330.0" prefWidth="302.0" style="-fx-background-color: #c10404;">
+               <children>
+                  <Button fx:id="btCadastrar" layoutX="117.0" layoutY="219.0" mnemonicParsing="false" onAction="#cadastrar" style="-fx-background-color: white; -fx-border-color: white; -fx-border-radius: 15; -fx-text-fill: #c10404;" text="Cadastrar" textFill="WHITE" />
+                  <Label layoutX="60.0" layoutY="262.0" text="ja possui um cadastro!" textFill="WHITE" />
+                  <Button fx:id="btEntar" layoutX="185.0" layoutY="258.0" mnemonicParsing="false" onAction="#sair" style="-fx-background-color: transparent;" text="Entre" textFill="#ffeb56" />
+                  <TextField fx:id="tfSenha2" layoutX="48.0" layoutY="175.0" prefHeight="27.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: white;" />
+                  <Label layoutX="49.0" layoutY="157.0" text="Confirme sua senha" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfUsuario" layoutX="46.0" layoutY="52.0" prefHeight="27.0" prefWidth="210.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 15;" />
+                  <Label layoutX="47.0" layoutY="30.0" text="Usuario" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfSenha" layoutX="47.0" layoutY="112.0" prefHeight="27.0" prefWidth="208.0" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: white;" />
+                  <Label layoutX="52.0" layoutY="89.0" text="Senha" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="79.0" prefHeight="138.0" prefWidth="1778.0" style="-fx-background-color: #c10404;">
+               <children>
+                  <Label layoutX="674.0" layoutY="12.0" text="Sunoom' s  Boutique" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="65.0" />
+                     </font>
+                  </Label>
+                  <Line endX="212.7999267578125" endY="1.0" layoutX="777.0" layoutY="84.0" startX="-107.5999755859375" startY="1.0" stroke="WHITE" />
+                  <Label layoutX="721.0" layoutY="92.0" prefHeight="22.0" prefWidth="302.0" text="Vestidos           -           Acessórios" textFill="WHITE">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
          </children>
       </AnchorPane>
-   </center>
+   </top>
 </BorderPane>

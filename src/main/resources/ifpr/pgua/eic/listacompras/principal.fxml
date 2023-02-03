@@ -3,51 +3,88 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="600" prefWidth="800" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaPrincipal">
+<BorderPane prefHeight="782.0" prefWidth="1543.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaPrincipal">
    <center>
       
    </center>
    <bottom>
-      <VBox prefHeight="606.0" prefWidth="953.0" spacing="10" BorderPane.alignment="CENTER">
+      <VBox prefHeight="600.0" prefWidth="800.0" spacing="10" BorderPane.alignment="CENTER">
          <padding>
             <Insets topRightBottomLeft="10" />
          </padding>
          <children>
-            <AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;">
+            <AnchorPane prefHeight="600.0" prefWidth="1640.0" style="-fx-background-color: #f5f5dc;">
                <children>
-                  <Button fx:id="btAcessorios" layoutX="366.0" layoutY="120.0" onAction="#acessorios" prefWidth="100" style="-fx-background-color: transpart; -fx-border-color: pink; -fx-border-radius: 15;" text="Acessorios " />
-                  <Button fx:id="btVestido" layoutX="366.0" layoutY="166.0" mnemonicParsing="false" onAction="#vestidos" prefWidth="100" style="-fx-background-color: transpart; -fx-border-radius: 15; -fx-border-color: pink;" text="Vestidos" /> 
-                  <Button fx:id="btSair" layoutX="366.0" layoutY="202.0" onAction="#sair" prefWidth="100" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: purple;" text="Sair" />
-                  <Label layoutX="273.0" layoutY="242.0" prefHeight="26.0" prefWidth="658.0" text="Uma charmosa boutique de vestidos de gala exclusivos" textFill="#95389c">
-                     <font>
-                        <Font name="Bell MT" size="13.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="270.0" layoutY="255.0" prefHeight="25.0" prefWidth="337.0" text=" feitos a mão pela renomada estilista Mirela da Costa Cunha." textFill="#7b1778">
+                  <AnchorPane layoutX="-15.0" layoutY="-68.0" prefHeight="50.0" prefWidth="1654.0" style="-fx-background-color: #e1c495;">
+                     <children>
+                        <Line endX="109.0" endY="42.59999084472656" layoutX="705.0" layoutY="23.0" startX="109.0" startY="-24.000015258789062" stroke="WHITE" />
+                        <Line endX="1447.0999755859375" endY="-1.1444091796875E-5" layoutX="193.0" layoutY="66.0" startX="-179.00001525878906" startY="-1.1444091796875E-5" stroke="WHITE" />
+                        <Line endX="1403.0" endY="6.399967193603516" layoutX="229.0" layoutY="-5.0" startX="-230.59999084472656" startY="6.399967193603516" stroke="WHITE" />
+                        <Button fx:id="btAcessorios" layoutX="817.0" layoutY="12.0" mnemonicParsing="false" onAction="#acessorios" prefHeight="53.0" prefWidth="837.0" style="-fx-background-color: transparent;" />
+                        <Button fx:id="btVestido" layoutX="7.0" layoutY="13.0" mnemonicParsing="false" onAction="#vestidos" prefHeight="47.0" prefWidth="803.0" style="-fx-background-color: transparent; -fx-text-fill: transparent;" text="Vestidos" textFill="#dfbc98" />
+                        <Label layoutX="362.0" layoutY="13.0" text="Vestidos" textFill="WHITE">
+                           <font>
+                              <Font name="Bodoni MT Condensed" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1107.0" layoutY="13.0" prefHeight="48.0" prefWidth="199.0" text="Acesórios" textFill="WHITE">
+                           <font>
+                              <Font name="Bodoni MT Condensed" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="440.0" fitWidth="302.0" layoutX="274.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@6a14cd5198d79ced664f815c41f36644.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="443.0" fitWidth="294.0" layoutX="666.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cd0c0e9ad8c45ecda702b327bff3a722.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="439.0" fitWidth="436.0" layoutX="1056.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bf86205a171510b6657769dcec6c4831.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="946.0" layoutY="531.0" prefHeight="25.0" prefWidth="337.0" textFill="#7b1778">
                      <font>
                         <Font name="Calibri" size="12.0" />
                      </font>
                   </Label>
-                  <AnchorPane layoutX="-11.0" layoutY="-10.0" prefHeight="108.0" prefWidth="1920.0" style="-fx-background-color: #f26b8a;">
-                     <children>
-                        <Label layoutX="347.0" layoutY="31.0" text="Sunoom' s  Boutique" textFill="WHITE">
-                           <font>
-                              <Font name="Bodoni MT Poster Compressed" size="41.0" />
-                           </font>
-                        </Label>
-                        <Button fx:id="btCarrinhoCompra" layoutX="553.0" layoutY="75.0" mnemonicParsing="false" onAction="#carrinho" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 15; -fx-text-fill: white;" text="Carrinho de compras" />
-                     </children>
-                  </AnchorPane>
+                  <Label layoutX="394.0" layoutY="530.0" prefHeight="26.0" prefWidth="851.0" text="Uma charmosa boutique de vestidos de gala exclusivos  feitos a mão pela renomada estilista Mirela da Costa Cunha." textFill="#c10404">
+                     <font>
+                        <Font name="Bell MT" size="17.0" />
+                     </font>
+                  </Label>
                   
                </children>
             </AnchorPane>
          </children>
       </VBox>
    </bottom>
+   <top>
+      <AnchorPane prefHeight="139.0" prefWidth="1662.0" style="-fx-background-color: #c10404;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="80.0" layoutY="40.0" text="Sunoom' s  Boutique" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Poster Compressed" size="56.0" />
+               </font>
+            </Label>
+            <Button fx:id="CarrinhoCompra" layoutX="1305.0" layoutY="37.0" onAction="#carrinho" prefHeight="27.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: white;" text="Carrinho de Compras" textFill="WHITE" /> 
+            <Button fx:id="btSair" layoutX="1457.0" layoutY="37.0" onAction="#sair" prefWidth="100" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: white; -fx-text-fill: white;" text="Sair" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </top>
 
 </BorderPane>

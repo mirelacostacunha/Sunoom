@@ -6,6 +6,7 @@ import ifpr.pgua.eic.listacompras.repository.LoginRepository;
 import ifpr.pgua.eic.listacompras.results.Result;
 import ifpr.pgua.eic.listacompras.utils.BorderPaneRegion;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 
 import javafx.scene.control.Alert;

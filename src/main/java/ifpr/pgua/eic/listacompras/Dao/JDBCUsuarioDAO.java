@@ -92,7 +92,7 @@ public class JDBCUsuarioDAO implements UsuarioDao{
             pstm.close();
             con.close();
 
-            return Result.sucess("Cliente criado com sucesso!");
+            return Result.sucess("Seja bem vindo, cadastro realizado com sucesso!");
         } catch (SQLException resultado) {
             System.out.println(resultado.getMessage());
             return Result.fail(resultado.getMessage());

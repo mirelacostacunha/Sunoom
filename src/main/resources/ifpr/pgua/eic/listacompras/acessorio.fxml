@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="1543.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
   <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="754.0" prefWidth="582.0" style="-fx-background-color: white;">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="754.0" prefWidth="1549.0" style="-fx-background-color: white;">
          <children>
-            <AnchorPane layoutX="-4.0" layoutY="-4.0" prefHeight="106.0" prefWidth="600.0" style="-fx-background-color: #f26b8a;">
+            <AnchorPane layoutX="-4.0" layoutY="-4.0" prefHeight="106.0" prefWidth="1551.0" style="-fx-background-color: #f26b8a;">
                <children>
                   <Label layoutX="169.0" layoutY="22.0" prefHeight="62.0" prefWidth="262.0" style="-fx-text-fill: white;" text=" Acessorios Sunoom' s" textFill="#e163b2">
                      <font>
