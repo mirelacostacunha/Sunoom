@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="1543.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaVestido">
+   <center>
+      <TableView fx:id="tbItens" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="tbcItem" prefWidth="363.20002442598343" text="Nome" />
+          <TableColumn fx:id="tbcDescricao" prefWidth="327.1999816894531" text="Descrição " />
+            <TableColumn fx:id="tbcValor" prefWidth="127.20001220703125" text="Valor" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

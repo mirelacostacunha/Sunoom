@@ -43,8 +43,12 @@ public class TelaLogin {
 
     
 
+    
     @FXML
     private void entrar() {
-        App.changeScreenRegion("Principal", BorderPaneRegion.CENTER);
-    } 
-}
+    
+            
+            App.changeScreenRegion("Principal", BorderPaneRegion.CENTER);
+    
+            }    
+            }

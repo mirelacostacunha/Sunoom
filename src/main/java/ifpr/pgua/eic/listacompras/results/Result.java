@@ -1,14 +1,14 @@
 package ifpr.pgua.eic.listacompras.results;
 
 public class Result {
-    private String msg;
+    private static String msg;
 
     public Result(String msg){
         this.msg = msg;
     }
 
     
-    public static Result sucess(String msg){
+    public static  Result sucess(String string){
         return new Sucess(msg);
     }
 

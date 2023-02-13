@@ -1,2 +1,31 @@
 09/01/2023- Foi criado o projeto Lista Compras dos videos do professor Hugo Perlin implententando uma tela de login e cadastro.
 No dia 09/01 foi criada as telas de Login, Cadastro e a tela Principal. -Funcionando!
+
+
+    public  TelaVestido(ListaVestidoRepository repository){
+        this.repository = repository;
+        this.item = new ArrayList<>();
+    }   
+
+    @Override
+    public void initialize(URL arg0, ResourceBundle arg1) {
+      
+       initTable();
+    }
+
+
+     private void initTable(){
+        tbcItem.setCellValueFactory(new PropertyValueFactory<>("id"));
+        tbcDescricao.setCellValueFactory(new PropertyValueFactory<>("descricao"));
+        tbcValor.setCellValueFactory(new PropertyValueFactory<>("valor"));
+        tbItens.setItems( Atualizar());
+
+     }
+
+     public List<Itens> Atualizar(){
+        VestidoDAO dao = new VestidoDAO();
+        return FXCollections.observableArrayList()dao.getList();
+            
+        
+     }
+}

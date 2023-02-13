@@ -6,18 +6,20 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="1543.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane hbarPolicy="NEVER" hmax="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1400.0" prefWidth="1543.0" vbarPolicy="ALWAYS" vmax="2.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.listacompras.controllers.TelaVestido">
   <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1030.0" prefWidth="602.0" style="-fx-background-color: white;">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1400.0" prefWidth="1528.0" style="-fx-background-color: white;">
          <children>
-            <AnchorPane layoutY="-1.0" prefHeight="99.0" prefWidth="588.0" style="-fx-background-color: #f26b8a;">
+            <BorderPane prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane layoutY="-1.0" prefHeight="115.0" prefWidth="1528.0" style="-fx-background-color: #ddb7ab;">
                <children>
-                  <Button layoutX="523.0" layoutY="60.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-radius: 15;" text="Voltar" />
-                  <Label layoutX="202.0" layoutY="26.0" text="Sunoom' s Vestidos" textFill="#f7eded">
+                  <Button layoutX="1299.0" layoutY="18.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-radius: 15;" text="Voltar" />
+                  <Label layoutX="573.0" layoutY="18.0" prefHeight="78.0" prefWidth="311.0" text="Sunoom' s Vestidos" textFill="#fcfcfc">
                      <font>
-                        <Font name="Bodoni MT Poster Compressed" size="41.0" />
+                        <Font name="Bodoni MT Poster Compressed" size="68.0" />
                      </font>
                   </Label>
                </children>
@@ -32,28 +34,140 @@
                   <Image url="@1504086626-rX03blkZ.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="246.0" fitWidth="350.0" layoutX="46.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@OIP%20(1).jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="253.0" fitWidth="228.0" layoutX="332.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@sexy-satin-a-line-long-evening-dresses-2020.jpg" />
-               </image>
-            </ImageView>
             <Label layoutX="113.0" layoutY="410.0" text="Dress cristal blue" />
             <Label layoutX="129.0" layoutY="441.0" text="\$18.000,00" />
             <Button layoutX="91.0" layoutY="468.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
             <Button layoutX="347.0" layoutY="468.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
             <Label layoutX="389.0" layoutY="441.0" text="\$18.500,00" />
             <Label layoutX="373.0" layoutY="410.0" text="Dress cristal black" />
-            <Label layoutX="99.0" layoutY="818.0" text="Princes Red Dress" />
-            <Label layoutX="115.0" layoutY="849.0" text="\$18.700,00" />
-            <Button layoutX="79.0" layoutY="876.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
-            <Label layoutX="387.0" layoutY="818.0" text="Princes Blue Dress" />
-            <Label layoutX="405.0" layoutY="849.0" text="\$18.700,00" />
-            <Button layoutX="367.0" layoutY="876.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <ImageView fitHeight="241.0" fitWidth="167.0" layoutX="584.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@1bdfa104380ef536c3076eacc005cff6.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="252.0" fitWidth="200.0" layoutX="820.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@2e98525c1a89645d22e7f31a20292a28.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="257.0" fitWidth="203.0" layoutX="1030.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@44da2243eadffa75a842a83ffe7e0995.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="246.0" fitWidth="198.0" layoutX="1278.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@649d36c72fc4af40ac1d23837b6c911d.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="619.0" layoutY="410.0" text="Dress cristal blue" />
+            <Label layoutX="846.0" layoutY="410.0" text="Dress cristal black" />
+            <Label layoutX="635.0" layoutY="441.0" text="\$18.000,00" />
+            <Button layoutX="597.0" layoutY="468.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Label layoutX="865.0" layoutY="441.0" text="\$18.000,00" />
+            <Button layoutX="827.0" layoutY="468.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Label layoutX="1082.0" layoutY="410.0" text="Dress cristal black" />
+            <Label layoutX="1100.0" layoutY="441.0" text="\$18.000,00" />
+            <Button layoutX="1066.0" layoutY="468.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Label layoutX="1312.0" layoutY="410.0" text="Dress cristal black" />
+            <Label layoutX="1330.0" layoutY="441.0" text="\$18.000,00" />
+            <Button layoutX="1292.0" layoutY="468.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <ImageView fitHeight="238.0" fitWidth="173.0" layoutX="67.0" layoutY="571.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@2fd53c40115dbdbd217877195a72281c.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="239.0" fitWidth="159.0" layoutX="314.0" layoutY="568.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@6d441e818f2ee4eea45ae2e6161b3375.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="369.0" fitWidth="181.0" layoutX="545.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@36dbe3710ebf436fbce83d6c56e64569.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="237.0" fitWidth="212.0" layoutX="803.0" layoutY="569.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@56c3a4c0215ce444edb437c5b69bc5d8.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="256.0" fitWidth="162.0" layoutX="1052.0" layoutY="555.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@540aad502aff938174a56f9e8304867a.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="310.0" fitWidth="174.0" layoutX="1292.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@3803e9ba7adf32d342939ed796d15212.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="267.0" fitWidth="176.0" layoutX="70.0" layoutY="976.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@8b7d66bfbfc19af96a60d7d0d1a05693.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="113.0" layoutY="822.0" text="Dress cristal blue" />
+            <Label layoutX="129.0" layoutY="855.0" text="\$18.000,00" />
+            <Button layoutX="91.0" layoutY="886.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Label layoutX="344.0" layoutY="822.0" text="Dress cristal blue" />
+            <Label layoutX="360.0" layoutY="855.0" text="\$18.000,00" />
+            <Button layoutX="322.0" layoutY="886.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Label layoutX="591.0" layoutY="822.0" text="Dress cristal blue" />
+            <Label layoutX="606.0" layoutY="855.0" text="\$18.000,00" />
+            <Button layoutX="815.0" layoutY="886.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Button layoutX="568.0" layoutY="886.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Label layoutX="837.0" layoutY="822.0" text="Dress cristal blue" />
+            <Label layoutX="853.0" layoutY="855.0" text="\$18.000,00" />
+            <Label layoutX="1084.0" layoutY="822.0" text="Dress cristal blue" />
+            <Label layoutX="1100.0" layoutY="855.0" text="\$18.000,00" />
+            <Button layoutX="1062.0" layoutY="886.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Label layoutX="1314.0" layoutY="822.0" text="Dress cristal blue" />
+            <Label layoutX="1330.0" layoutY="855.0" text="\$18.000,00" />
+            <Button layoutX="1292.0" layoutY="886.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Label layoutX="122.0" layoutY="1261.0" text="Dress cristal blue" />
+            <Label layoutX="138.0" layoutY="1299.0" text="\$18.000,00" />
+            <Button layoutX="100.0" layoutY="1333.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <ImageView fitHeight="255.0" fitWidth="214.0" layoutX="314.0" layoutY="982.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11f2522bccee7df60a488a60ef0a02e1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="325.0" fitWidth="159.0" layoutX="555.0" layoutY="981.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@9e9374befbd7a33188d0a18b6c85940c.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="260.0" fitWidth="199.0" layoutX="782.0" layoutY="976.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sexy-satin-a-line-long-evening-dresses-2020.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="234.0" fitWidth="217.0" layoutX="1045.0" layoutY="976.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@78da283bb609d489f32504810dba442f.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="344.0" fitWidth="172.0" layoutX="1293.0" layoutY="980.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@24e8cc9f9da179a2ede7e3274186769b.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="369.0" layoutY="1261.0" text="Dress cristal blue" />
+            <Label layoutX="385.0" layoutY="1299.0" text="\$18.000,00" />
+            <Button layoutX="347.0" layoutY="1333.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Label layoutX="590.0" layoutY="1261.0" text="Dress cristal blue" />
+            <Label layoutX="606.0" layoutY="1297.0" text="\$18.000,00" />
+            <Button layoutX="803.0" layoutY="1333.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Button layoutX="569.0" layoutY="1333.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Button layoutX="1062.0" layoutY="1329.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Button layoutX="1304.0" layoutY="1329.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: green; -fx-border-radius: 15;" text="Adicionar ao Carrinho" />
+            <Label layoutX="853.0" layoutY="1297.0" text="\$18.000,00" />
+            <Label layoutX="837.0" layoutY="1261.0" text="Dress cristal blue" />
+            <Label layoutX="1104.0" layoutY="1294.0" text="\$18.000,00" />
+            <Label layoutX="1084.0" layoutY="1261.0" text="Dress cristal blue" />
+            <Label layoutX="1322.0" layoutY="1261.0" text="Dress cristal blue" />
+            <Label layoutX="1330.0" layoutY="1294.0" text="\$18.000,00" />
          </children></AnchorPane>
   </content>
 </ScrollPane>

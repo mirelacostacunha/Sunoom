@@ -22,7 +22,22 @@
                         <Image url="@2c3fe79f-48fe-482e-8258-c071f1703016.jpg" />
                      </image>
                   </ImageView>
-                  <AnchorPane layoutX="475.0" layoutY="464.0" prefHeight="340.0" prefWidth="306.0" style="-fx-background-color: #c10404;">
+                  <AnchorPane layoutX="107.0" layoutY="69.0" prefHeight="192.0" prefWidth="1754.0" style="-fx-background-color: #ddb7ab;">
+                     <children>
+                        <Label layoutX="725.0" layoutY="79.0" text="Sunoom' s  Boutique" textFill="WHITE">
+                           <font>
+                              <Font name="Bodoni MT Poster Compressed" size="65.0" />
+                           </font>
+                        </Label>
+                        <Line endX="212.7999267578125" endY="1.0" layoutX="830.0" layoutY="153.0" startX="-107.5999755859375" startY="1.0" stroke="WHITE" />
+                        <Label layoutX="772.0" layoutY="159.0" prefHeight="22.0" prefWidth="302.0" text="Vestidos           -           Acessórios" textFill="WHITE">
+                           <font>
+                              <Font name="Bernard MT Condensed" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="475.0" layoutY="464.0" prefHeight="340.0" prefWidth="306.0" style="-fx-background-color: #ddb7ab;">
                      <children>
                         <Label layoutX="41.0" layoutY="65.0" text="Usuario" textFill="WHITE">
                            <font>
@@ -34,32 +49,17 @@
                               <Font name="Britannic Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="btCadastrar" layoutX="177.0" layoutY="249.0" mnemonicParsing="false" onAction="#cadastrar" style="-fx-background-color: transparent;" text="Cadastre se!" textFill="#cbd108">
+                        <Button fx:id="btCadastrar" layoutX="177.0" layoutY="249.0" mnemonicParsing="false" onAction="#cadastrar" style="-fx-background-color: transparent;" text="Cadastre se!" textFill="#e742ea">
                            <font>
                               <Font name="Bookman Old Style" size="12.0" />
                            </font>
                         </Button>
                         <TextField fx:id="tfUsuario" layoutX="32.0" layoutY="88.0" prefHeight="10.0" prefWidth="242.0" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: white;" />
                         <TextField fx:id="tfSenha" layoutX="31.0" layoutY="163.0" prefHeight="26.0" prefWidth="244.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 15;" />
-                        <Button fx:id="btEntrar" layoutX="121.0" layoutY="209.0" mnemonicParsing="false" onAction="#entrar" style="-fx-background-color: white; -fx-border-color: white; -fx-border-radius: 15; -fx-text-fill: #c10404;" text="Entrar" />
+                        <Button fx:id="btEntrar" layoutX="121.0" layoutY="209.0" mnemonicParsing="false" onAction="#entrar" style="-fx-background-color: white; -fx-border-color: white; -fx-border-radius: 15;" text="Entrar" />
                         <Label layoutX="41.0" layoutY="253.0" text="Não possui uma conta?" textFill="WHITE">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane layoutX="107.0" layoutY="69.0" prefHeight="192.0" prefWidth="1754.0" style="-fx-background-color: #c10404;">
-                     <children>
-                        <Label layoutX="725.0" layoutY="79.0" text="Sunoom' s  Boutique" textFill="WHITE">
-                           <font>
-                              <Font name="Bodoni MT Poster Compressed" size="65.0" />
-                           </font>
-                        </Label>
-                        <Line endX="212.7999267578125" endY="1.0" layoutX="830.0" layoutY="153.0" startX="-107.5999755859375" startY="1.0" stroke="WHITE" />
-                        <Label layoutX="772.0" layoutY="159.0" prefHeight="22.0" prefWidth="302.0" text="Vestidos           -           Acessórios" textFill="WHITE">
-                           <font>
-                              <Font name="Bernard MT Condensed" size="18.0" />
                            </font>
                         </Label>
                      </children>

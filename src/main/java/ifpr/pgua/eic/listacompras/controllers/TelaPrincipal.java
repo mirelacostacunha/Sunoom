@@ -1,6 +1,5 @@
 package ifpr.pgua.eic.listacompras.controllers;
 
-
 import ifpr.pgua.eic.listacompras.App;
 import ifpr.pgua.eic.listacompras.utils.BorderPaneRegion;
 import javafx.event.ActionEvent;
@@ -9,7 +8,6 @@ import javafx.scene.control.Button;
 
 public class TelaPrincipal {
 
-
     @FXML
     private Button btVestidos;
 
@@ -17,33 +15,17 @@ public class TelaPrincipal {
     private Button btAcessorios;
 
     @FXML
-    private Button btSair;
-    
-    @FXML
-    private Button btCarrinhoCompra;
-
-
-    @FXML
-    private void carrinho() {
-        App.changeScreenRegion("ListaCompra", BorderPaneRegion.CENTER);
-
-    } 
-
-    @FXML
-    private void vestidos() {
-        App.changeScreenRegion("Vestido", BorderPaneRegion.CENTER);
-
-    } 
-
-    @FXML
-    private void acessorios() {
-        App.changeScreenRegion("Acessorio", BorderPaneRegion.CENTER);
-
-    } 
-
-    @FXML
-    private void sair() {
-        App.changeScreenRegion("Login", BorderPaneRegion.CENTER);
+    void acessorios(ActionEvent event){
+        App.changeScreenRegion("Acessorios", BorderPaneRegion.CENTER);
     }
+
     
+    
+    @FXML
+    void vestidos(ActionEvent event) {
+    
+        App.changeScreenRegion("Vestidos", BorderPaneRegion.CENTER);
+
+    
+    }
 }

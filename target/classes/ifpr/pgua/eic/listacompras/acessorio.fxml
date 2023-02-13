@@ -1,59 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="1543.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
-  <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="754.0" prefWidth="1549.0" style="-fx-background-color: white;">
-         <children>
-            <AnchorPane layoutX="-4.0" layoutY="-4.0" prefHeight="106.0" prefWidth="1551.0" style="-fx-background-color: #f26b8a;">
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="1543.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" vmax="2.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="782.0" prefWidth="1543.0">
                <children>
-                  <Label layoutX="169.0" layoutY="22.0" prefHeight="62.0" prefWidth="262.0" style="-fx-text-fill: white;" text=" Acessorios Sunoom' s" textFill="#e163b2">
-                     <font>
-                        <Font name="Bodoni MT Poster Compressed" size="45.0" />
-                     </font>
-                  </Label>
-                  <Button layoutX="522.0" layoutY="67.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: white; -fx-text-fill: white;" text="Voltar" />
+                  <GridPane fx:id="gridAcessorios" hgap="20.0" prefHeight="766.0" prefWidth="1526.0" vgap="20.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </GridPane>
                </children>
             </AnchorPane>
-            <ImageView fitHeight="168.0" fitWidth="179.0" layoutX="59.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@R.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="188.0" fitWidth="255.0" layoutX="331.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@1108411886_292812920.jpg" />
-               </image>
-            </ImageView>
-            <Label layoutX="97.0" layoutY="299.0" text="Clutch bag green" />
-            <Label layoutX="122.0" layoutY="325.0" style="-fx-background-color: transparent;" text="\$900,00" />
-            <Button layoutX="78.0" layoutY="351.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: green;" text="adicionar ao carrinho" />
-            <Label layoutX="372.0" layoutY="299.0" text="Clutch bag sea blue" />
-            <Label layoutX="404.0" layoutY="325.0" style="-fx-background-color: transparent;" text="\$870,00" />
-            <Button layoutX="359.0" layoutY="351.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: green;" text="adicionar ao carrinho" />
-            <ImageView fitHeight="188.0" fitWidth="208.0" layoutX="59.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@bolsa-festa-mao-fina-luxo-clutch-premium-prata-bolsa-de-mao.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="229.0" fitWidth="240.0" layoutX="349.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@R%20(1).jpg" />
-               </image>
-            </ImageView>
-            <Label layoutX="97.0" layoutY="565.0" text="Clutch bag cristal" />
-            <Label layoutX="122.0" layoutY="595.0" style="-fx-background-color: transparent;" text="\$900,00" />
-            <Button layoutX="78.0" layoutY="622.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: green;" text="adicionar ao carrinho" />
-            <Button layoutX="360.0" layoutY="622.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-radius: 15; -fx-border-color: green;" text="adicionar ao carrinho" />
-            <Label layoutX="384.0" layoutY="565.0" text="Clutch bag gold" />
-            <Label layoutX="406.0" layoutY="595.0" style="-fx-background-color: transparent;" text="\$870,00" />
-         </children></AnchorPane>
-  </content>
-</ScrollPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

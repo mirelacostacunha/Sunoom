@@ -3,19 +3,31 @@ package ifpr.pgua.eic.listacompras.repository;
 import java.util.ArrayList;
 import java.util.List;
 
+import ifpr.pgua.eic.listacompras.Dao.JDBCVestidoDAO;
+import ifpr.pgua.eic.listacompras.Dao.interfaces.VestidoDAO;
+import ifpr.pgua.eic.listacompras.entities.Itens;
 
-import ifpr.pgua.eic.listacompras.entities.Vestido;
+public class ListaVestidoRepository {
 
-public class ListaRepository {
+   private List<Itens> item;
+   private VestidoDAO dao;
 
-   private ArrayList<Vestido>Vestidos;
+   public ListaVestidoRepository(JDBCVestidoDAO vestidoDao) {
+      this.dao = vestidoDao;
+}
 
-   public ListaRepository(){
-    Vestidos = new ArrayList<>();
-   }
 
-   public List<Vestido> getVestido(){
-    return Vestidos;
+   public List<Itens> getItem(){
+    return item;
 }
     
+ public void addVestidos(Itens itens){
+
+    item.add(itens);
+
+ }
+
+public List<Itens> listarTodos() {
+     return dao.listarTodos();
+}
 }
